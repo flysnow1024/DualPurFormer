@@ -1,0 +1,37 @@
+{
+  "purpose": "Documentation only; not a runnable training configuration",
+  "model": "DualPurFormer",
+  "evaluation": {
+    "dataset": "DU-IN Chinese word reading sEEG",
+    "subject_dependent": true,
+    "number_of_subjects": 12,
+    "number_of_classes": 61,
+    "seeds": [42, 0, 1, 2, 3, 4],
+    "train_validation_test_ratio": [0.8, 0.1, 0.1]
+  },
+  "cfp": {
+    "retention_ratio": 0.5,
+    "mask_floor": 0.0,
+    "prototype_temperature": 0.1,
+    "prototype_loss_weight": 0.1,
+    "cfp_loss_weight": 0.05,
+    "training_only": true
+  },
+  "hp": {
+    "descriptor": "log_energy",
+    "residual_scaling": "fixed",
+    "residual_scale": 0.05,
+    "auxiliary_loss_weight": 0.05,
+    "dropout": 0.1,
+    "output_layer_initialization": "zero"
+  },
+  "training": {
+    "epochs": 200,
+    "batch_size": 32,
+    "use_ema": true
+  },
+  "sensitivity": {
+    "cfp_retention_ratio": [0.25, 0.5, 0.75],
+    "hp_residual_scale": [0.01, 0.03, 0.05, 0.07, 0.1]
+  }
+}
