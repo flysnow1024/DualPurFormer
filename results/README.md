@@ -15,7 +15,7 @@ This table supplements the component ablation study in the paper by reporting re
 
 ## Test Accuracy (%)
 
-Each subject-level cell reports mean ± population standard deviation across six random seeds (`ddof=0`). The last row reports the macro-average across subjects ± pooled within-subject seed standard deviation, matching the convention in Table 2.
+Each subject-level cell reports mean ± population standard deviation across six random seeds. The last row reports the macro-average across subjects ± pooled within-subject seed standard deviation, matching the convention in Table 2.
 
 | Subject | A | B | C | D | E | F |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
