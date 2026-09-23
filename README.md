@@ -35,6 +35,12 @@ Each subject-level cell reports mean ± population standard deviation across six
 | sub-012 | 53.01 ± 3.34 | 53.55 ± 3.50 | 63.85 ± 2.13 | 55.65 ± 2.59 | 63.93 ± 1.70 | 64.48 ± 1.54 |
 | **Overall** | **51.16 ± 2.42** | **51.44 ± 2.49** | **57.32 ± 2.12** | **53.52 ± 2.42** | **56.92 ± 1.92** | **58.17 ± 2.23**|
 
+## Available Materials
+
+- [Experiment settings](configs/paper_settings.json)
+- [Subject-level component ablation results](results/README.md)
+- [Phonetically related word analysis](analysis/README.md)
+
 ## Usage
 ### Experimental Environment
 * **OS**: Linux
