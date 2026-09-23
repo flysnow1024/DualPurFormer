@@ -20,13 +20,11 @@ These pairs illustrate different forms of phonetic similarity rather than identi
 
 The analysis uses the subject-dependent evaluation setting described in the paper, covering 12 subjects and six random seeds. For each subject and random seed, recognition accuracy is calculated separately for each of the nine selected classes. These class accuracies are averaged with equal weight, and the resulting accuracy is then averaged across the six seeds to obtain one score per subject and method.
 
-Fig. 2(a) compares the distribution of these subject-level scores between MDM-Tent and DualPurFormer. The analysis concerns recognition accuracy on the selected classes, not the frequency of confusion between the two words in each pair.
-
-DualPurFormer shows a higher subject-level accuracy distribution than MDM-Tent on these phonetically related word classes. This observation is consistent with improved discrimination of words sharing phonetic components, although it does not directly establish which neural features account for the improvement.
+Fig. 2(a) compares the distribution of these subject-level scores between MDM-Tent and DualPurFormer. The analysis concerns recognition accuracy on the selected classes, not the frequency of confusion between the two words in each pair. DualPurFormer shows a higher subject-level accuracy distribution than MDM-Tent on these phonetically related word classes. This observation is consistent with improved discrimination of words sharing phonetic components, although it does not directly establish which neural features account for the improvement.
 
 ## Available Materials
 
 - `duin_word_pinyin.csv`: word-to-Pinyin mapping used to support phonetic analysis. Numerical suffixes indicate Mandarin tones; `5` denotes the neutral tone.
 - `README.md`: selected word pairs and evaluation protocol for Fig. 2(a).
 
-The complete evaluation code will be released with the model implementation upon acceptance of the paper. The dataset is not redistributed in this repository.
+The complete evaluation code will be released with the model implementation upon acceptance of the paper.
